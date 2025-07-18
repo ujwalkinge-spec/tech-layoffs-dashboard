@@ -41,7 +41,7 @@ import seaborn as sns
 import numpy as np
 import plotly.express as px
 
-df = pd.read_csv('/content/layoffs.csv')
+df = pd.read_csv('layoffs.csv')
 
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
 df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
